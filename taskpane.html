@@ -7,16 +7,31 @@
     <title>toINR Help</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; color: #333; line-height: 1.6; }
-        .header { color: #2b579a; border-bottom: 2px solid #2b579a; padding-bottom: 10px; margin-bottom: 20px; }
+        .header { 
+    display: flex; 
+    align-items: center; 
+    color: #2b579a; 
+    border-bottom: 2px solid #2b579a; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.logo {
+    width: 40px;      /* Adjust size as needed */
+    height: 40px;
+    margin-right: 12px;
+    border-radius: 4px; /* Optional: rounds the corners slightly */
+}
         code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-weight: bold; color: #d11; }
         .card { background: #f9f9f9; border-left: 5px solid #2b579a; padding: 10px; margin: 15px 0; }
         .footer { font-size: 0.8em; color: #666; margin-top: 30px; border-top: 1px solid #ddd; padding-top: 10px; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>toINR Guide</h1>
-    </div>
+<div class="header">
+    <img src="logo.png" alt="toINR Logo" class="logo">
+    <h1>toINR Guide</h1>
+</div>
 
     <p>Convert numbers to Indian Rupees in words instantly using the <strong>Indian Numbering System</strong> (Lakhs and Crores).</p>
 
