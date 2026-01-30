@@ -1,0 +1,19 @@
+{
+  "functions": [
+    {
+      "id": "convertToRupees",
+      "name": "CONVERTTORUPEES",
+      "description": "Converts numbers to Indian Rupees",
+      "parameters": [
+        {
+          "name": "amount",
+          "description": "The number to convert",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "string"
+      }
+    }
+  ]
+}
