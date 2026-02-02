@@ -84,9 +84,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://dasktechnologies.github.io/toINR-addin/functions.js"/>
