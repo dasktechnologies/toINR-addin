@@ -2,15 +2,15 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>acaeb2fc-c617-40f6-8f00-d968afab55b4</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
+  <ProviderName>DASK Technologies</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="toINR"/>
-  <Description DefaultValue="Write your own Excel functions in JavaScript."/>
+  <Description DefaultValue="Easily convert numeric values into Indian Rupee currency words within Excel."/>
   <IconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <SupportUrl DefaultValue="https://github.com/dasktechnologies/toINR-addin/issues"/>
   <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://dasktechnologies.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
@@ -54,18 +54,18 @@
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
-                <Label resid="CommandsGroup.Label"/>
+                <bt:Label resid="CommandsGroup.Label"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
                   <bt:Image size="80" resid="Icon.80x80"/>
                 </Icon>
                 <Control xsi:type="Button" id="TaskpaneButton">
-                  <Label resid="TaskpaneButton.Label"/>
-                  <Supertip>
-                    <Title resid="TaskpaneButton.Label"/>
-                    <Description resid="TaskpaneButton.Tooltip"/>
-                  </Supertip>
+                  <bt:Label resid="TaskpaneButton.Label"/>
+                  <bt:Supertip>
+                    <bt:Title resid="TaskpaneButton.Label"/>
+                    <bt:Description resid="TaskpaneButton.Tooltip"/>
+                  </bt:Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Icon.16x16"/>
                     <bt:Image size="32" resid="Icon.32x32"/>
@@ -84,9 +84,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://dasktechnologies.github.io/toINR-addin/toINR_16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://dasktechnologies.github.io/toINR-addin/toINR_32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://dasktechnologies.github.io/toINR-addin/toINR_80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://dasktechnologies.github.io/toINR-addin/functions.js"/>
