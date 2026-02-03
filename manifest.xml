@@ -6,8 +6,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="toINR"/>
   <Description DefaultValue="Easily convert numeric values into Indian Rupee currency words within Excel."/>
-  <IconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_80.png"/>
   <SupportUrl DefaultValue="https://github.com/dasktechnologies/toINR-addin/issues"/>
   <AppDomains>
     <AppDomain>https://dasktechnologies.github.io</AppDomain>
@@ -52,32 +52,28 @@
           </GetStarted>
           <FunctionFile resid="Taskpane.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            <OfficeTab id="TabHome">
-              <Group id="CommandsGroup">
-                <bt:Label resid="CommandsGroup.Label"/>
-                <Icon>
-                  <bt:Image size="16" resid="Icon.16x16"/>
-                  <bt:Image size="32" resid="Icon.32x32"/>
-                  <bt:Image size="80" resid="Icon.80x80"/>
-                </Icon>
-                <Control xsi:type="Button" id="TaskpaneButton">
-                  <bt:Label resid="TaskpaneButton.Label"/>
-                  <bt:Supertip>
-                    <bt:Title resid="TaskpaneButton.Label"/>
-                    <bt:Description resid="TaskpaneButton.Tooltip"/>
-                  </bt:Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>ButtonId1</TaskpaneId>
-                    <SourceLocation resid="Taskpane.Url"/>
-                  </Action>
-                </Control>
-              </Group>
-            </OfficeTab>
+<OfficeTab id="TabHome">
+  <Group id="CommandsGroup">
+    <bt:Label resid="CommandsGroup.Label"/>
+    
+    <Control xsi:type="Button" id="TaskpaneButton">
+      <bt:Label resid="TaskpaneButton.Label"/>
+      <bt:Supertip>
+        <bt:Title resid="TaskpaneButton.Label"/>
+        <bt:Description resid="TaskpaneButton.Tooltip"/>
+      </bt:Supertip>
+      <Icon>
+        <bt:Image size="16" resid="toINR_16.png"/>
+        <bt:Image size="32" resid="toINR_32.png"/>
+        <bt:Image size="80" resid="toINR_80.png"/>
+      </Icon>
+      <Action xsi:type="ShowTaskpane">
+        <TaskpaneId>ButtonId1</TaskpaneId>
+        <SourceLocation resid="Taskpane.Url"/>
+      </Action>
+    </Control>
+  </Group>
+</OfficeTab>
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
