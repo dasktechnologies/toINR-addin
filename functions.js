@@ -80,4 +80,4 @@ function convertDigits(amount) {
   return finalString.trim() + " Only";
 }
 
-CustomFunctions.associate("convertDigits", convertDigits);
+CustomFunctions.associate("INRCONVERT", convertDigits);
