@@ -6,9 +6,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="toINR"/>
   <Description DefaultValue="Easily convert numeric values into Indian Rupee currency words within Excel."/>
+  
   <IconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_80.png"/>
-  <SupportUrl DefaultValue="https://github.com/dasktechnologies/toINR-addin/issues"/>
+  <HighResolutionIconUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/assets/toINR_64.png"/>
+  <SupportUrl DefaultValue="https://dasktechnologies.github.io/toINR-addin/support.html"/>
+  
   <AppDomains>
     <AppDomain>https://dasktechnologies.github.io</AppDomain>
   </AppDomains>
@@ -24,6 +26,7 @@
     <SourceLocation DefaultValue="https://dasktechnologies.github.io/toINR-addin/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
+  
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
     <Hosts>
       <Host xsi:type="Workbook">
@@ -52,28 +55,32 @@
           </GetStarted>
           <FunctionFile resid="Taskpane.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-<OfficeTab id="TabHome">
-  <Group id="CommandsGroup">
-    <bt:Label resid="CommandsGroup.Label"/>
-    
-    <Control xsi:type="Button" id="TaskpaneButton">
-      <bt:Label resid="TaskpaneButton.Label"/>
-      <bt:Supertip>
-        <bt:Title resid="TaskpaneButton.Label"/>
-        <bt:Description resid="TaskpaneButton.Tooltip"/>
-      </bt:Supertip>
-      <Icon>
-        <bt:Image size="16" resid="toINR_16.png"/>
-        <bt:Image size="32" resid="toINR_32.png"/>
-        <bt:Image size="80" resid="toINR_80.png"/>
-      </Icon>
-      <Action xsi:type="ShowTaskpane">
-        <TaskpaneId>ButtonId1</TaskpaneId>
-        <SourceLocation resid="Taskpane.Url"/>
-      </Action>
-    </Control>
-  </Group>
-</OfficeTab>
+            <OfficeTab id="TabHome">
+				<Group id="CommandsGroup">
+				  <Label resid="CommandsGroup.Label" />
+				  <Icon>
+					<bt:Image size="16" resid="Icon.16x16" />
+					<bt:Image size="32" resid="Icon.32x32" />
+					<bt:Image size="80" resid="Icon.80x80" />
+				  </Icon>
+				  <Control xsi:type="Button" id="TaskpaneButton">
+					<Label resid="TaskpaneButton.Label" />
+					<Supertip>
+					  <Title resid="TaskpaneButton.Label" />
+					  <Description resid="TaskpaneButton.Tooltip" />
+					</Supertip>
+					<Icon>
+					  <bt:Image size="16" resid="Icon.16x16" />
+					  <bt:Image size="32" resid="Icon.32x32" />
+					  <bt:Image size="80" resid="Icon.80x80" />
+					</Icon>
+					<Action xsi:type="ShowTaskpane">
+					  <TaskpaneId>ButtonId1</TaskpaneId>
+					  <SourceLocation resid="Taskpane.Url" />
+					</Action>
+				  </Control>
+				</Group>
+            </OfficeTab>
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
@@ -87,7 +94,7 @@
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://dasktechnologies.github.io/toINR-addin/functions.js"/>
         <bt:Url id="Functions.Metadata.Url" DefaultValue="https://dasktechnologies.github.io/toINR-addin/functions.json"/>
-        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://github.com/dasktechnologies/toINR-addin"/>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://dasktechnologies.github.io/toINR-addin/support.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://dasktechnologies.github.io/toINR-addin/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
@@ -97,7 +104,7 @@
         <bt:String id="TaskpaneButton.Label" DefaultValue="Help &amp; Instructions"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Successfully loaded! Use =toINR.convertToRupees(cell) to convert numbers to words."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Successfully loaded! Use =toINR.convertDigits(cell) to convert numbers to words."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click for help with Rupee conversions"/>
       </bt:LongStrings>
     </Resources>
