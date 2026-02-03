@@ -1,8 +1,8 @@
 {
   "functions": [
     {
-      "id": "convertDigits",
-      "name": "convertDigits",
+      "id": "INRCONVERT",
+      "name": "INRCONVERT",
       "description": "Converts numbers to Indian Rupees",
       "parameters": [
         {
