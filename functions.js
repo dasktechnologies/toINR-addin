@@ -4,6 +4,10 @@
  * @param {number} amount The number to convert.
  * @return {string} The amount in words.
  */
+Office.onReady(() => {
+  console.log("Add-in ready");
+});
+
 function convertDigits(amount) {
   // 1. Safety Guard: 10 Lakh Crore = 10,00,00,00,00,000
   const LIMIT = 10000000000000; 
