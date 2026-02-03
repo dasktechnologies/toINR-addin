@@ -2,7 +2,7 @@
   "functions": [
     {
       "id": "convertDigits",
-      "name": "CONVERTtoRUPEES",
+      "name": "convertDigits",
       "description": "Converts numbers to Indian Rupees",
       "parameters": [
         {
